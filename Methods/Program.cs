@@ -31,6 +31,13 @@ namespace Methods
                 Console.WriteLine(product.Description);
                 Console.WriteLine("--------------------");
             }
+
+            Console.WriteLine("**************Methods**************");
+
+            //Instance
+            CartManager cartManager = new CartManager();
+            cartManager.Add(product1);
+            cartManager.Add(product2);
         }
     }
 }
