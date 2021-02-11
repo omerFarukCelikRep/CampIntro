@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampIntro", "CampIntro\Camp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cycles", "Cycles\Cycles.csproj", "{1F735786-AFAE-4017-B059-1B998E320B77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassIntro", "ClassIntro\ClassIntro.csproj", "{E8FEDC3B-4C1C-4ED9-896E-2E9C4FA90BB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1F735786-AFAE-4017-B059-1B998E320B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F735786-AFAE-4017-B059-1B998E320B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F735786-AFAE-4017-B059-1B998E320B77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8FEDC3B-4C1C-4ED9-896E-2E9C4FA90BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8FEDC3B-4C1C-4ED9-896E-2E9C4FA90BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8FEDC3B-4C1C-4ED9-896E-2E9C4FA90BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8FEDC3B-4C1C-4ED9-896E-2E9C4FA90BB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
