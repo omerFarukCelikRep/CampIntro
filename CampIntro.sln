@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cycles", "Cycles\Cycles.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassIntro", "ClassIntro\ClassIntro.csproj", "{E8FEDC3B-4C1C-4ED9-896E-2E9C4FA90BB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods", "Methods\Methods.csproj", "{BADC793D-B5FB-4971-84A2-E69D4581D301}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E8FEDC3B-4C1C-4ED9-896E-2E9C4FA90BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8FEDC3B-4C1C-4ED9-896E-2E9C4FA90BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8FEDC3B-4C1C-4ED9-896E-2E9C4FA90BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BADC793D-B5FB-4971-84A2-E69D4581D301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADC793D-B5FB-4971-84A2-E69D4581D301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADC793D-B5FB-4971-84A2-E69D4581D301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADC793D-B5FB-4971-84A2-E69D4581D301}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
