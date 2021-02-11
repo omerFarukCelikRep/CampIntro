@@ -12,5 +12,12 @@ namespace Methods
         {
             Console.WriteLine("Added");
         }
+
+        //Method Overload
+        public void Add(string productName, double price, string description)
+        {
+
+            Console.WriteLine("Added" + productName);
+        }
     }
 }
