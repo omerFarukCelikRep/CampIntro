@@ -27,7 +27,7 @@ namespace CampIntro
             }
             else
             {
-                Console.WriteLine("Değişmedi");
+                Console.WriteLine("Değişmedi.");
             }
 
             if (isLogin == true)
