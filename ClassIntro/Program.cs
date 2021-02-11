@@ -21,7 +21,17 @@ namespace ClassIntro
             course3.Teacher = "Berkay Bilgin";
             course3.Rating = 90;
 
+            Course course4 = new Course();
+            course4.CourseName = "C++";
+            course4.Teacher = "Murat Kurtboğan";
+            course4.Rating = 95;
+
             Course[] courses = new Course[] { course1, course2, course3 };
+
+            foreach (var course in courses)
+            {
+                Console.WriteLine(course.CourseName + " : " + course.Teacher);
+            }
         }
     }
 }
