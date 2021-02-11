@@ -6,7 +6,12 @@ namespace Mathematics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Operations operations = new Operations();
+
+            //3+5 sonucu ekrana yazdırılır
+            operations.Summation(3, 5);
+
+            operations.Summation(5, 8);
         }
     }
 }
