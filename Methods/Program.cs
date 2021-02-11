@@ -21,6 +21,16 @@ namespace Methods
             product2.Description = "Diyarbakır Karpuzu";
 
             Product[] products = new Product[] { product1, product2 };
+
+
+            //Type Safety
+            foreach (Product product in products)
+            {
+                Console.WriteLine(product.Name);
+                Console.WriteLine(product.Price);
+                Console.WriteLine(product.Description);
+                Console.WriteLine("--------------------");
+            }
         }
     }
 }
