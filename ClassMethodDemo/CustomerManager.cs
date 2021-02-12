@@ -7,7 +7,12 @@ namespace ClassMethodDemo
     public class CustomerManager
     {
         Customer[] customers;
+        public CustomerManager()
+        {
+            customers = new Customer[] { };
+        }
 
+        //Customer dizisini dönen metot
         public Customer[] GetCustomers()
         {
             return customers;
