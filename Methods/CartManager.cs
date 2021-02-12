@@ -37,6 +37,19 @@ namespace Methods
             {
                 product.Price = product.Price * (1 - discount);
             }
+            else
+            {
+                //DefaultDiscount metotunu kullanarak default discount tanımlamış olduk ve bu değişkeni else koşulumuzda kullandık
+                DefaultDiscount(out double discountDefault);
+                product.Price = product.Price * (1 - discountDefault);
+            }
+        }
+
+        //Out parametresi kullanarak metot içerisinde tanımladığımız değeri discount parametresi metotun kullanıldığı yerde discount tanımlı olmasa bile tanımlamış olduk
+        public double DefaultDiscount(out double discount)
+        {
+            discount = 0.10;
+            return discount;
         }
     }
 }

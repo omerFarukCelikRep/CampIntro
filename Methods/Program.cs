@@ -44,6 +44,9 @@ namespace Methods
             cartManager.MakeDiscount(ref product2);
             Console.WriteLine(product2.Price);
 
+            cartManager.MakeDiscount(ref product1);
+            Console.WriteLine(product1.Price);
+
 
         }
     }
