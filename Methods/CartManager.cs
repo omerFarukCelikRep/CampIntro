@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Methods
@@ -21,7 +22,7 @@ namespace Methods
             Console.WriteLine(str);
         }
 
-        //Method Overload
+        //Method Overload => Aynı metot ismini kullanarak farklı parametrelerle işlem gerçekleştiriyoruz
         public void Add(string productName, double price, string description)
         {
 
@@ -50,6 +51,12 @@ namespace Methods
         {
             discount = 0.10;
             return discount;
+        }
+
+        //Params keyword u kullanarak girilen fiyatların toplamını veren metot
+        public double totalPrice(params double[] prices)
+        {
+            return prices.Sum();
         }
     }
 }
