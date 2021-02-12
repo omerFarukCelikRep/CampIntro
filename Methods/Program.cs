@@ -22,6 +22,7 @@ namespace Methods
 
             Product[] products = new Product[] { product1, product2 };
 
+            
 
             //Type Safety
             foreach (Product product in products)
@@ -38,6 +39,12 @@ namespace Methods
             CartManager cartManager = new CartManager();
             cartManager.Add(product1);
             cartManager.Add(product2);
+
+            //indirim uygulama metodunu kullanarak Karpuzun fiyatına indirim uygulacağız ve değişen fiyatın çıktısını alacağız
+            cartManager.MakeDiscount(ref product2);
+            Console.WriteLine(product2.Price);
+
+
         }
     }
 }
