@@ -28,7 +28,14 @@ namespace ClassMethodDemo
                 Console.WriteLine(item.FirstName + " " + item.LastName);
             }
 
-            
+            customerManager.Delete(customer1);
+
+            customers = customerManager.GetCustomers();
+
+            foreach (Customer item in customers)
+            {
+                Console.WriteLine(item.FirstName + " " + item.LastName);
+            }
         }
     }
 }
