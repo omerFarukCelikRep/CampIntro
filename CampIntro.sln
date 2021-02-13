@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueAndReferenceTypes", "V
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassMethodDemo", "ClassMethodDemo\ClassMethodDemo.csproj", "{51C3C14F-3346-477C-842D-08E0FDEE7B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP1", "OOP1\OOP1.csproj", "{E0C43BA4-F09F-4C6F-9499-14869EF6DA79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP1", "OOP1\OOP1.csproj", "{E0C43BA4-F09F-4C6F-9499-14869EF6DA79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{76BF97E3-77C1-48B1-819B-C46C00800F6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{E0C43BA4-F09F-4C6F-9499-14869EF6DA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0C43BA4-F09F-4C6F-9499-14869EF6DA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0C43BA4-F09F-4C6F-9499-14869EF6DA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76BF97E3-77C1-48B1-819B-C46C00800F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76BF97E3-77C1-48B1-819B-C46C00800F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76BF97E3-77C1-48B1-819B-C46C00800F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76BF97E3-77C1-48B1-819B-C46C00800F6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
