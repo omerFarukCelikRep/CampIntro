@@ -16,7 +16,10 @@ namespace Constructors
         }
         public Customer(int id, string firstName, string lastName, string city)
         {
-
+            this.ID = id;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.City = city;
         }
     }
 }
