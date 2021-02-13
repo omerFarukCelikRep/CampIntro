@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Collections
 {
@@ -6,7 +7,17 @@ namespace Collections
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string[] namesArray = new string[] {"Engin", "Murat", "Kerem", "Halil" };
+
+            //List<string> names = new List<string>() { "Engin", "Murat", "Kerem", "Halil" };
+            List<string> names = new List<string>();
+            names.Add("Engin");
+            names.Add("Murat");
+            names.Add("Kerem");
+            names.Add("Halil");
+
+            names.Add("İlker");
+
         }
     }
 }
