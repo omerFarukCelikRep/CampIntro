@@ -15,6 +15,14 @@ namespace OOP1
          * D => Delete 
          */
 
-        
+        public void Add(Product product)
+        {
+            Console.WriteLine(product.ProductName + " Added");
+        }
+
+        public void Update(Product product)
+        {
+            Console.WriteLine(product.ProductName + " Updated");
+        }
     }
 }
