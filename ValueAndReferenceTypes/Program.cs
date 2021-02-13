@@ -51,12 +51,18 @@ namespace ValueAndReferenceTypes
             customer.CreditCardNumber = "223456487";
 
             Employee employee = new Employee();
+            employee.FirstName = "Veli";
 
             Person person3 = customer;
             customer.FirstName = "Ahmet";
 
             Console.WriteLine(person3.FirstName); // Salih
             Console.WriteLine(((Customer)person3).CreditCardNumber); // 223456487
+
+            PersonManager personManager = new PersonManager();
+            personManager.Add(employee); // Veli
+
+            
         }
     }
 }
