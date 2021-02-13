@@ -29,12 +29,34 @@ namespace ValueAndReferenceTypes
              * float
              * double
              * bool
+             * enum
              * 
              * Reference Types => Referans Tipler
              * Array
              * Class
              * Interface
              */
+
+            Person person1 = new Person();
+            Person person2 = new Person();
+            person1.FirstName = "Engin";
+
+            person2 = person1;
+            person1.FirstName = "Derin";
+
+            Console.WriteLine(person2.FirstName); // Derin
+
+            Customer customer = new Customer();
+            customer.FirstName = "Salih";
+            customer.CreditCardNumber = "223456487";
+
+            Employee employee = new Employee();
+
+            Person person3 = customer;
+            customer.FirstName = "Ahmet";
+
+            Console.WriteLine(person3.FirstName); // Salih
+            Console.WriteLine(((Customer)person3).CreditCardNumber); // 223456487
         }
     }
 }
