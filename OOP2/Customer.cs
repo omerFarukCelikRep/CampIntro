@@ -7,7 +7,7 @@ namespace OOP2
     public class Customer
     {
         public int ID { get; set; }
-        public int CustomerNumber { get; set; }
+        public string CustomerNumber { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string CompanyName { get; set; }
