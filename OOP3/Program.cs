@@ -7,6 +7,15 @@ namespace OOP3
     {
         static void Main(string[] args)
         {
+            /*
+             * Referans tutsun ve uygulaması zorunlu olan operasyonları tutsun diye interface oluşturduk
+             * 
+             * Alternatif sistemler için bir şablon ve referans tutucu görevi görüyor.
+             * 
+             * Birbirinin alternatifi olan ama kod içerikleri farklı olan durumlar için kullanırız.
+             */
+
+
             ICreditManager consumerCreditManager = new ConsumerCreditManager();
 
             ICreditManager vehicleCreditManager = new VehicleCreditManager();
