@@ -23,11 +23,13 @@ namespace OOP3
             ICreditManager housingCreditManager = new HousingCreditManager();
 
             ILoggerService databaseLoggerService = new DatabaseLoggerService();
-            ILoggerService fileLoggerService = new DatabaseLoggerService();
+            ILoggerService fileLoggerService = new FileLoggerService();
+
+            List<ILoggerService> loggerServices = new List<ILoggerService> { new DatabaseLoggerService(), new SmsLoggerService() };
 
             ApplyingManager applyingManager = new ApplyingManager();
             //applyingManager.Apply(housingCreditManager, new DatabaseLoggerService());
-            applyingManager.Apply(housingCreditManager, databaseLoggerService);
+            applyingManager.Apply(housingCreditManager, loggerServices);
 
             List<ICreditManager> credits = new List<ICreditManager>() { consumerCreditManager, vehicleCreditManager};
 
