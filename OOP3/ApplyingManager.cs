@@ -6,10 +6,12 @@ namespace OOP3
 {
     public class ApplyingManager
     {
-        public void Apply(ICreditManager creditManager)
+        //Method Injection
+        public void Apply(ICreditManager creditManager, ILoggerService loggerService)
         {
             //Başvuran bilgilerini değerlendirme
             creditManager.Calculate();
+            loggerService.Log();
 
         }
 
