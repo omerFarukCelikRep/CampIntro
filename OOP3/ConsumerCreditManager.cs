@@ -8,7 +8,7 @@ namespace OOP3
     {
         public void Calculate()
         {
-            Console.WriteLine("Taşıt Kredisi Ödeme Planı Hesaplandı");
+            Console.WriteLine("İhtiyaç Kredisi Ödeme Planı Hesaplandı");
         }
 
         public void DoSomething()

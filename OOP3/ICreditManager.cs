@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP3
 {
-    interface ICreditManager
+    public interface ICreditManager
     {
         public void Calculate();
         public void DoSomething();
