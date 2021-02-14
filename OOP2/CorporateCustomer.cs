@@ -4,7 +4,8 @@ using System.Text;
 
 namespace OOP2
 {
-    public class CorporateCustomer
+    //Inheritance => Miras 
+    public class CorporateCustomer : Customer
     {
         public int ID { get; set; }
         public string CustomerNumber { get; set; }
