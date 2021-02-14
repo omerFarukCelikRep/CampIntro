@@ -21,6 +21,18 @@ namespace DictionaryDemo
              * 
              */
 
+
+            MyDictionary<int, string> myDictionary = new MyDictionary<int, string>();
+            myDictionary.Add(1, "Ali");
+            myDictionary.Add(2, "Veli");
+
+            foreach (var item in myDictionary.Key)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine(myDictionary.Key[0] + " " + myDictionary.Value[0]);
+
         }
     }
 }
