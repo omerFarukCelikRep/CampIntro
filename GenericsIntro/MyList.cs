@@ -4,10 +4,10 @@ using System.Text;
 
 namespace GenericsIntro
 {
-    public class MyList<T>
+    public class MyList<T> //Generic Class
     {
         T[] items;
-        public int Length { get { return items.Length; } }
+        public int Length { get { return items.Length; } } //Read Only
         public T[] Items { get { return items; } }
         //Constructor
         public MyList()
