@@ -6,7 +6,21 @@ namespace DictionaryDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            /*
+             * Dictionary 
+             * ---------------------
+             * Anahtar(Key) ve Değer(Value) olmak üzere iki kavram vardır.
+             * Dizilere eklediğimiz elemanları Değer, o elemanlara erişmek için kullandığımız indeksleri de Anahtar olarak düşünebilirsiniz.
+             * Her bir Değerin farklı bir Anahtarı olmalıdır yani koleksiyon içerisinde yer alan Anahtarlar birbirinden farklı olmalıdır.
+             * 
+             * Dictionary sınıfından bir nesne oluştururken, anahtar ve değerin veri tiplerini belirtmemiz gerekmekte. 
+             * Aşağıdaki kod satırında, Key_Tipi yerine Anahtarın veri tipini, Value_Tipi yerine de Değerin verini tipini belirtmeliyiz.
+             * 
+             * Dictionary<Key_Tipi, Value_Tipi> Referans_Adi = new Dictionary<Key_Tipi, Value_Tipi>();
+             * 
+             * 
+             */
+
         }
     }
 }
