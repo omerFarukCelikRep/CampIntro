@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace OOP3
 {
@@ -6,7 +7,18 @@ namespace OOP3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ICreditManager consumerCreditManager = new ConsumerCreditManager();
+
+            ICreditManager vehicleCreditManager = new VehicleCreditManager();
+
+            ICreditManager housingCreditManager = new HousingCreditManager();
+
+            ApplyingManager applyingManager = new ApplyingManager();
+            applyingManager.Apply(housingCreditManager);
+
+            List<ICreditManager> credits = new List<ICreditManager>() { consumerCreditManager, vehicleCreditManager};
+
+            applyingManager.Inform(credits);
         }
     }
 }
