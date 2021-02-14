@@ -7,11 +7,14 @@ namespace OOP3
     public class ApplyingManager
     {
         //Method Injection
-        public void Apply(ICreditManager creditManager, ILoggerService loggerService)
+        public void Apply(ICreditManager creditManager, List<ILoggerService> loggerServices)
         {
             //Başvuran bilgilerini değerlendirme
             creditManager.Calculate();
-            loggerService.Log();
+            foreach (ILoggerService loggerService in loggerServices)
+            {
+                loggerService.Log(); 
+            }
 
         }
 
