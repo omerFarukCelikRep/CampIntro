@@ -4,11 +4,9 @@ using System.Text;
 
 namespace OOP3
 {
-    public class CreditManager
+    interface ICreditManager
     {
-        public void Calculate()
-        {
-
-        }
+        public void Calculate();
+        public void DoSomething();
     }
 }
