@@ -6,6 +6,13 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
+            InterfacesIntro();
+
+            IPerson person = new Customer();
+        }
+
+        private static void InterfacesIntro()
+        {
             PersonManager personManager = new PersonManager();
             personManager.Add(new Customer { ID = 1, FirstName = "Ömer Faruk", LastName = "Çelik", Address = "İstanbul" });
 
