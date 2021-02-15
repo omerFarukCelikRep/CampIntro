@@ -16,6 +16,7 @@ namespace Interfaces2
             ProjectManager projectManager = new ProjectManager();
             projectManager.Add(employeeManager);
             projectManager.Add(customerManager);
+            projectManager.Add(new InternManager());
         }
     }
 }
