@@ -12,6 +12,10 @@ namespace Interfaces2
 
             IPersonManager employeeManager = new EmployeeManager();
             employeeManager.Add();
+
+            ProjectManager projectManager = new ProjectManager();
+            projectManager.Add(employeeManager);
+            projectManager.Add(customerManager);
         }
     }
 }
