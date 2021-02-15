@@ -8,7 +8,8 @@ namespace Interfaces
         {
             InterfacesIntro();
 
-            IPerson person = new Customer();
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new OracleCustomerDal());
         }
 
         private static void InterfacesIntro()
