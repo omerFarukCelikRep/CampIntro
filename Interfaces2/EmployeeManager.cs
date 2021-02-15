@@ -11,5 +11,10 @@ namespace Interfaces2
             //Personel Ekleme Kodları
             Console.WriteLine("Personel Eklendi");
         }
+
+        public void Update()
+        {
+            Console.WriteLine("Personel Güncellendi");
+        }
     }
 }

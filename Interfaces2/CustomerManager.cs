@@ -11,5 +11,10 @@ namespace Interfaces2
             //Müşteri Ekleme Kodları
             Console.WriteLine("Müşteri Eklendi");
         }
+
+        public void Update()
+        {
+            Console.WriteLine("Müşteri Güncellendi");
+        }
     }
 }
