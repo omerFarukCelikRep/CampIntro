@@ -8,5 +8,6 @@ namespace Interfaces2
     {
         //unimplemented operation
         void Add();
+        void Update();
     }
 }
