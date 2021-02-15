@@ -6,9 +6,9 @@ namespace Interfaces2
 {
     class ProjectManager
     {
-        public void Add()
+        public void Add(IPersonManager personManager)
         {
-
+            personManager.Add();
         }
     }
 }
