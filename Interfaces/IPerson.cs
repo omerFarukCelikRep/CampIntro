@@ -6,5 +6,6 @@ namespace Interfaces
 {
     interface IPerson
     {
+        int ID { get; set; }
     }
 }
