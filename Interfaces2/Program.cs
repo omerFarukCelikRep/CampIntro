@@ -6,7 +6,12 @@ namespace Interfaces2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Interface'ler new'lenemez
+            IPersonManager customerManager = new CustomerManager();
+            customerManager.Add();
+
+            IPersonManager employeeManager = new EmployeeManager();
+            employeeManager.Add();
         }
     }
 }
