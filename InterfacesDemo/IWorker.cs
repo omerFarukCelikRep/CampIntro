@@ -7,7 +7,5 @@ namespace InterfacesDemo
     interface IWorker
     {
         void Work();
-        void Eat();
-        void GetSalary();
     }
 }
