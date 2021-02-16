@@ -6,11 +6,8 @@ using System.Text;
 
 namespace IntefaceAbstractDemo.Concrete
 {
-    public class StarbaucksCustomerManager : ICustomerService
+    public class StarbaucksCustomerManager : BaseCustomerManager
     {
-        public void Save(Customer customer)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
