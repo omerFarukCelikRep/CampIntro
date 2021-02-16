@@ -5,7 +5,7 @@ using System.Text;
 
 namespace IntefaceAbstractDemo.Abstract
 {
-    public class BaseCustomerManager : ICustomerService
+    public abstract class BaseCustomerManager : ICustomerService
     {
         public void Save(Customer customer)
         {
