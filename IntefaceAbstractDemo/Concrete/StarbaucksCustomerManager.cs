@@ -8,6 +8,23 @@ namespace IntefaceAbstractDemo.Concrete
 {
     public class StarbaucksCustomerManager : BaseCustomerManager
     {
-        
+        private ICustomerCheckService _customerCheckService;
+
+        public StarbaucksCustomerManager(ICustomerCheckService customerCheckService)
+        {
+            _customerCheckService = customerCheckService;
+        }
+
+        public override void Save(Customer customer)
+        {
+            CheckIfRealPerson(customer);
+
+            base.Save(customer);
+        }
+
+        private void CheckIfRealPerson(Customer customer)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
