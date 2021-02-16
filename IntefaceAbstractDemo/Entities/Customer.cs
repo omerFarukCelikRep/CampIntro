@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IntefaceAbstractDemo
+namespace IntefaceAbstractDemo.Entities
 {
     public class Customer
     {
