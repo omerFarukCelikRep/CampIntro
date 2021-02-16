@@ -1,10 +1,11 @@
-﻿using System;
+﻿using IntefaceAbstractDemo.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace IntefaceAbstractDemo.Entities
 {
-    public class Customer
+    public class Customer : IEntity
     {
         public int ID { get; set; }
         public string FirstName { get; set; }
