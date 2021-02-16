@@ -7,7 +7,7 @@ namespace IntefaceAbstractDemo.Abstract
 {
     public abstract class BaseCustomerManager : ICustomerService
     {
-        public void Save(Customer customer)
+        public virtual void Save(Customer customer)
         {
             Console.WriteLine("Saved to Database : " + customer.FirstName);
         }
