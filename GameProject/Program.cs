@@ -1,4 +1,7 @@
-﻿using System;
+﻿using GameProject.Adapters;
+using GameProject.Concrete;
+using GameProject.Entities;
+using System;
 
 namespace GameProject
 {
@@ -6,7 +9,15 @@ namespace GameProject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GamerManager gamerManager = new GamerManager(new UserValidationManager());
+            gamerManager.Add(new Gamer
+            {
+                ID = 1,
+                FirstName = "Ömer Faruk",
+                LastName = "Çelik",
+                DateOfBirth = new DateTime(1990, 1, 1),
+                IdentityNumber = 12345679801
+            });
         }
     }
 }
