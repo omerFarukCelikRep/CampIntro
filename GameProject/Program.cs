@@ -10,6 +10,7 @@ namespace GameProject
         static void Main(string[] args)
         {
             GamerManager gamerManager = new GamerManager(new UserValidationManager());
+            //GamerManager gamerManager = new GamerManager(new NewEStateUserValidationManager());
             gamerManager.Add(new Gamer
             {
                 ID = 1,
