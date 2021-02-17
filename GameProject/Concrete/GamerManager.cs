@@ -8,6 +8,7 @@ namespace GameProject.Concrete
 {
     public class GamerManager : IGamerService
     {
+
         public void Add(Gamer gamer)
         {
             Console.WriteLine(gamer.FirstName + " " + gamer.LastName + " Added");
