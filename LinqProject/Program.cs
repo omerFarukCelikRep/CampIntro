@@ -30,7 +30,18 @@ namespace LinqProject
             AnyExample(products);
 
             FindExample(products);
+
             FindAllAndContainsExample(products);
+            WhereWithContainsAndOrderByExample(products);
+        }
+
+        private static void WhereWithContainsAndOrderByExample(List<Product> products)
+        {
+            var whereResult = products.Where(p => p.ProductName.Contains("top")).OrderByDescending(p => p.UnitPrice).ThenByDescending(p => p.ProductName);
+            foreach (var item in whereResult)
+            {
+                Console.WriteLine(item.ProductName);
+            }
         }
 
         private static void FindAllAndContainsExample(List<Product> products)
