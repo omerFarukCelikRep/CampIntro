@@ -27,8 +27,14 @@ namespace LinqProject
 
 
             GetProductsWithLinq(products);
+            AnyExample(products);
 
+        }
 
+        private static void AnyExample(List<Product> products)
+        {
+            var result = products.Any(p => p.ProductName == "Dell Laptop");
+            Console.WriteLine(result);
         }
 
         private static List<Product> GetProductsWithLinq(List<Product> products)
