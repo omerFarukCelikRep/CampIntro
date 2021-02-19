@@ -38,7 +38,36 @@ namespace LinqProject
 
             QuerySyntax(products);
 
+            QuerySyntaxLinq(products);
 
+            JoinExample(categories, products);
+        }
+
+        private static void JoinExample(List<Category> categories, List<Product> products)
+        {
+            var joinResult = from p in products
+                             join c in categories
+                             on p.CategoryID equals c.CategoryID
+                             where p.UnitPrice > 5000
+                             orderby p.UnitPrice
+                             select new ProductDto { ProductID = p.ProductID, CategoryName = c.CategoryName, ProductName = p.ProductName, UnitPrice = p.UnitPrice };
+
+            foreach (var productDto in joinResult)
+            {
+                Console.WriteLine("{0} -- {1}", productDto.ProductName, productDto.CategoryName);
+            }
+        }
+
+        private static void QuerySyntaxLinq(List<Product> products)
+        {
+            var classsicLinqResult = from p in products
+                                     where p.UnitPrice > 6000
+                                     orderby p.UnitPrice descending, p.ProductName ascending
+                                     select new ProductDto { ProductID = p.ProductID, ProductName = p.ProductName, UnitPrice = p.UnitPrice };
+            foreach (var product in classsicLinqResult)
+            {
+                Console.WriteLine(product.ProductName);
+            }
         }
 
         private static void QuerySyntax(List<Product> products)
@@ -86,7 +115,7 @@ namespace LinqProject
         private static List<Product> GetProductsWithLinq(List<Product> products)
         {
             //Wtih Linq
-           return products.Where(p => p.UnitPrice > 5000 && p.UnitsInStock > 3).ToList();
+            return products.Where(p => p.UnitPrice > 5000 && p.UnitsInStock > 3).ToList();
 
         }
 
