@@ -23,6 +23,7 @@ namespace LinqProject
                 new Product { ProductID = 5, CategoryID = 2, ProductName = "Apple Telefon", QuantityPerUnit = "4 GB Ram", UnitPrice = 8000, UnitsInStock = 0 },
             };
 
+            //Single Line Query
             GetProductsWithoutLinq(products);
 
             GetProductsWithLinq(products);
@@ -32,7 +33,21 @@ namespace LinqProject
             FindExample(products);
 
             FindAllAndContainsExample(products);
+
             WhereWithContainsAndOrderByExample(products);
+            QuerySyntax(products);
+        }
+
+        private static void QuerySyntax(List<Product> products)
+        {
+            var queryResult = from p in products
+                              where p.UnitPrice > 6000
+                              orderby p.UnitPrice descending, p.ProductName ascending
+                              select p;
+            foreach (var product in queryResult)
+            {
+                Console.WriteLine(product.ProductName);
+            }
         }
 
         private static void WhereWithContainsAndOrderByExample(List<Product> products)
