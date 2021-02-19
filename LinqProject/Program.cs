@@ -35,7 +35,10 @@ namespace LinqProject
             FindAllAndContainsExample(products);
 
             WhereWithContainsAndOrderByExample(products);
+
             QuerySyntax(products);
+
+
         }
 
         private static void QuerySyntax(List<Product> products)
