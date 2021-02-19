@@ -28,8 +28,18 @@ namespace LinqProject
             GetProductsWithLinq(products);
 
             AnyExample(products);
-            FindExample(products);
 
+            FindExample(products);
+            FindAllAndContainsExample(products);
+        }
+
+        private static void FindAllAndContainsExample(List<Product> products)
+        {
+            var findList = products.FindAll(p => p.ProductName.Contains("top"));
+            foreach (var item in findList)
+            {
+                Console.WriteLine(item.ProductName);
+            }
         }
 
         private static void FindExample(List<Product> products)
