@@ -25,10 +25,17 @@ namespace LinqProject
 
             GetProductsWithoutLinq(products);
 
-
             GetProductsWithLinq(products);
-            AnyExample(products);
 
+            AnyExample(products);
+            FindExample(products);
+
+        }
+
+        private static void FindExample(List<Product> products)
+        {
+            var findResult = products.Find(p => p.ProductID == 3);
+            Console.WriteLine(findResult);
         }
 
         private static void AnyExample(List<Product> products)
